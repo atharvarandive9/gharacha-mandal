@@ -1,0 +1,59 @@
+.gallery-section{
+
+padding:100px 20px;
+
+background:#080808;
+
+text-align:center;
+
+}
+
+.gallery-section h2{
+
+color:#FFD700;
+
+font-size:36px;
+
+margin-bottom:40px;
+
+}
+
+.gallery-image{
+
+width:100%;
+
+height:500px;
+
+object-fit:cover;
+
+border-radius:25px;
+
+border:2px solid rgba(255,215,0,.3);
+
+box-shadow:0 0 25px rgba(255,215,0,.2);
+
+}
+
+.swiper{
+
+max-width:900px;
+
+margin:auto;
+
+}
+
+.swiper-pagination-bullet{
+
+background:#FFD700 !important;
+
+}
+
+@media(max-width:768px){
+
+.gallery-image{
+
+height:320px;
+
+}
+
+}

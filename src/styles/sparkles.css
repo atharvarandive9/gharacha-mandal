@@ -1,0 +1,48 @@
+.sparkle-container{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    overflow:hidden;
+    z-index:4;
+}
+
+.sparkle{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    background:#FFD700;
+
+    box-shadow:
+        0 0 8px gold,
+        0 0 20px gold;
+
+    animation:twinkle infinite ease-in-out;
+
+}
+
+@keyframes twinkle{
+
+0%{
+
+opacity:.2;
+transform:scale(.5);
+
+}
+
+50%{
+
+opacity:1;
+transform:scale(1.8);
+
+}
+
+100%{
+
+opacity:.2;
+transform:scale(.5);
+
+}
+
+}

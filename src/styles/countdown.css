@@ -1,0 +1,91 @@
+.countdown{
+
+padding:100px 20px;
+
+background:#0b0b0b;
+
+text-align:center;
+
+}
+
+.countdown h2{
+
+color:gold;
+
+margin-bottom:50px;
+
+font-size:35px;
+
+}
+
+.count-box{
+
+display:flex;
+
+justify-content:center;
+
+gap:25px;
+
+flex-wrap:wrap;
+
+}
+
+.count-box div{
+
+width:140px;
+
+padding:30px;
+
+border-radius:25px;
+
+background:#111;
+
+border:1px solid rgba(255,215,0,.25);
+
+box-shadow:0 0 20px rgba(255,215,0,.12);
+
+transition:.3s;
+
+}
+
+.count-box div:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 0 30px gold;
+
+}
+
+.count-box h1{
+
+font-size:55px;
+
+color:#FFD700;
+
+}
+
+.count-box p{
+
+margin-top:10px;
+
+font-size:18px;
+
+color:white;
+
+}
+
+@media(max-width:768px){
+
+.count-box div{
+
+width:130px;
+
+}
+
+.count-box h1{
+
+font-size:42px;
+
+}
+
+}

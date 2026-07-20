@@ -1,0 +1,33 @@
+.music-btn{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:65px;
+    height:65px;
+    border:none;
+    border-radius:50%;
+    background:linear-gradient(45deg,#FFD700,#ff9800);
+    color:white;
+    font-size:28px;
+    cursor:pointer;
+    z-index:9999;
+    box-shadow:0 0 20px gold;
+    transition:.3s;
+}
+
+.music-btn:hover{
+    transform:scale(1.1);
+}
+
+.music-btn.playing{
+    animation:rotate 3s linear infinite;
+}
+
+@keyframes rotate{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}

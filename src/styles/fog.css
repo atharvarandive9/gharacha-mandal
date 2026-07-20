@@ -1,0 +1,46 @@
+.fog{
+
+position:fixed;
+
+width:200%;
+
+height:100%;
+
+left:-50%;
+
+pointer-events:none;
+
+background:
+radial-gradient(circle,
+rgba(255,255,255,.05),
+transparent 70%);
+
+animation:fogMove 40s linear infinite;
+
+z-index:2;
+
+}
+
+.fog2{
+
+animation-duration:60s;
+
+opacity:.6;
+
+}
+
+@keyframes fogMove{
+
+0%{
+
+transform:translateX(-10%);
+
+}
+
+100%{
+
+transform:translateX(10%);
+
+}
+
+}
