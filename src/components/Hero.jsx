@@ -1,6 +1,8 @@
+import { useNavigate } from "react-router-dom";
 import "./../styles/hero.css";
 
 export default function Hero() {
+  const navigate = useNavigate();
   return (
     <section className="hero">
 
@@ -32,10 +34,12 @@ export default function Hero() {
           आपल्या उपस्थितीने आमचा उत्सव अधिक मंगलमय होईल.
         </p>
 
-        <a href="#invitation" className="invite-btn">
-          View Invitation
-        </a>
-
+        <button
+          className="btn"
+          onClick={() => navigate("/invitation")}
+        >
+            View Invitation
+        </button>
         <div className="scroll">
           ⌄
         </div>
