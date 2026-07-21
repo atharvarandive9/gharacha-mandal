@@ -19,3 +19,11 @@ h1{
   color:gold;
   font-size:60px;
 }
+.footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+  font-size: 14px;
+}
