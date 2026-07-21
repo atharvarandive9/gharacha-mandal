@@ -1,11 +1,11 @@
 import React from "react";
 
-export default function Footer() {
+function Footer() {
   return (
-    <footer className="footer">
-      <p>
-        © 2026 घरचा मंडळ | गणपती बाप्पा मोरया 🙏
-      </p>
+    <footer>
+      <p>© 2026 घरचा मंडळ | गणपती बाप्पा मोरया 🙏</p>
     </footer>
   );
 }
+
+export default Footer;
