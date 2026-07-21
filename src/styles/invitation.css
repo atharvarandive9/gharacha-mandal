@@ -1,141 +1,120 @@
-.invitation{
+.invitation {
+  min-height: 100vh;
+  padding: 80px 20px;
+  position: relative;
+  overflow: hidden;
 
-padding:100px 20px;
+  background:
+  linear-gradient(
+    rgba(0,0,0,0.45),
+    rgba(0,0,0,0.45)
+  ),
+  url("/temple-bg.png");
 
-background:#080808;
+  background-size: cover;
+  background-position: center;
+}
 
-display:flex;
 
-justify-content:center;
+.hero-title {
+  text-align: center;
+  color: #ffd700;
+  margin-bottom: 40px;
+}
+
+
+.hero-title h1 {
+  font-size: 40px;
+  text-shadow: 0 0 15px orange;
+}
+
+
+.hero-title p {
+  color:white;
+  font-size:18px;
+}
+
+
+
+.scroll-card {
+
+  max-width:600px;
+  margin:auto;
+
+  padding:40px;
+
+  background:
+  rgba(255,255,255,0.9);
+
+  border-radius:20px;
+
+  text-align:center;
+
+  box-shadow:
+  0 0 30px rgba(255,180,0,0.8);
+
+  animation: appear 1.5s ease;
+}
+
+
+
+.scroll-card h3 {
+
+  color:#b45f06;
+
+  font-size:28px;
 
 }
 
-.scroll-card{
 
-width:100%;
 
-max-width:800px;
+.scroll-card p {
 
-padding:50px;
+  line-height:1.8;
 
-border-radius:30px;
-
-background:rgba(255,255,255,.05);
-
-backdrop-filter:blur(18px);
-
-border:1px solid rgba(255,215,0,.3);
-
-box-shadow:0 0 40px rgba(255,215,0,.15);
-
-text-align:center;
+  font-size:18px;
 
 }
 
-.scroll-card h3{
 
-font-size:36px;
 
-color:#FFD700;
+.divider {
 
-margin-bottom:30px;
+  width:80%;
+  height:2px;
 
-}
+  background:#d18b00;
 
-.scroll-card p{
-
-font-size:20px;
-
-line-height:2;
-
-color:#eee;
+  margin:25px auto;
 
 }
 
-.divider{
 
-width:120px;
 
-height:3px;
+.details div {
 
-background:gold;
-
-margin:35px auto;
-
-border-radius:20px;
+  margin:20px;
 
 }
 
-.details{
 
-display:grid;
+.details span {
 
-grid-template-columns:repeat(3,1fr);
-
-gap:25px;
-
-margin-top:35px;
+  font-size:30px;
 
 }
 
-.details div{
 
-background:#111;
+@keyframes appear {
 
-padding:20px;
-
-border-radius:20px;
-
-transition:.4s;
-
+from {
+opacity:0;
+transform:translateY(40px);
 }
 
-.details div:hover{
-
-transform:translateY(-6px);
-
-box-shadow:0 0 20px gold;
-
-}
-
-.details span{
-
-font-size:35px;
-
-}
-
-.details p{
-
-margin-top:12px;
-
-font-size:18px;
-
-}
-
-@media(max-width:768px){
-
-.details{
-
-grid-template-columns:1fr;
-
-}
-
-.scroll-card{
-
-padding:30px;
-
-}
-
-.scroll-card h3{
-
-font-size:28px;
-
-}
-
-.scroll-card p{
-
-font-size:17px;
-
+to {
+opacity:1;
+transform:translateY(0);
 }
 
 }

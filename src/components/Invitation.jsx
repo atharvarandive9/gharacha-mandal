@@ -1,8 +1,17 @@
 import "../styles/invitation.css";
+import Petals from "../components/Petals";
 
 export default function Invitation() {
   return (
     <section className="invitation" id="invitation">
+
+      <Petals />
+
+      <div className="hero-title">
+        <h1>🌺 गणपती बाप्पा मोरया 🌺</h1>
+        <p>घरचा मंडळ आपले हार्दिक स्वागत करीत आहे</p>
+      </div>
+
 
       <div className="scroll-card">
 
@@ -15,7 +24,9 @@ export default function Invitation() {
           गणेशोत्सवात सहर्ष निमंत्रण.
         </p>
 
+
         <div className="divider"></div>
+
 
         <div className="details">
 
@@ -24,16 +35,20 @@ export default function Invitation() {
             <p>14 September 2026</p>
           </div>
 
-        
 
           <div>
             <span>📍</span>
-            <p>shri krishna Nagar,Bhuvaneshwar,Varse,Roha-Raigad</p>
+            <p>
+              Shri Krishna Nagar,
+              Bhuvaneshwar,
+              Varse, Roha-Raigad
+            </p>
           </div>
 
         </div>
 
       </div>
+
 
     </section>
   );
