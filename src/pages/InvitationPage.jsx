@@ -4,7 +4,7 @@ import Countdown from "../components/Countdown";
 import Timeline from "../components/Timeline";
 import Gallery from "../components/Gallery";
 import Members from "../components/Members";
-import Location from "../components/Location";
+
 import Footer from "../components/Footer";
 
 export default function InvitationPage() {
@@ -16,7 +16,7 @@ export default function InvitationPage() {
       <Timeline />
       <Gallery />
       <Members />
-      <Location />
+     
       <Footer />
     </>
   );
