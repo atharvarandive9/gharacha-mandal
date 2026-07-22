@@ -9,7 +9,7 @@
     rgba(0,0,0,0.45),
     rgba(0,0,0,0.45)
   ),
-  url("/temple-bg.png");
+  url("/public/imges/temple-bg.png");
 
   background-size: cover;
   background-position: center;

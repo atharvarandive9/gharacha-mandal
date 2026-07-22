@@ -1,3 +1,4 @@
+import Invitation from "../components/Invitation";
 import Navbar from "../components/Navbar";
 import Countdown from "../components/Countdown";
 import Timeline from "../components/Timeline";
@@ -10,6 +11,7 @@ export default function InvitationPage() {
   return (
     <>
       <Navbar />
+      <Invitation/>
       <Countdown />
       <Timeline />
       <Gallery />
