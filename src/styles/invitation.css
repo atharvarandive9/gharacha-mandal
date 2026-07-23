@@ -23,37 +23,49 @@
 }
 
 
-.hero-title h1 {
-  font-size: 40px;
-  text-shadow: 0 0 15px orange;
+.hero-title h1{
+    font-size:48px;
+    color:#FFD700;
+    text-shadow:
+        0 0 10px gold,
+        0 0 25px orange;
+
+    margin-bottom:10px;
 }
 
 
-.hero-title p {
-  color:white;
-  font-size:18px;
+.hero-title p{
+    color:white;
+    font-size:22px;
+    letter-spacing:1px;
 }
 
 
 
-.scroll-card {
+.scroll-card{
+    max-width:700px;
+    margin:40px auto;
+    padding:50px 35px;
 
-  max-width:600px;
-  margin:auto;
+    background:linear-gradient(
+        180deg,
+        rgba(255,250,230,.98),
+        rgba(255,245,210,.95)
+    );
 
-  padding:40px;
+    border:4px solid #FFD700;
+    border-radius:30px;
 
-  background:
-  rgba(255,255,255,0.9);
+    text-align:center;
 
-  border-radius:20px;
+    box-shadow:
+        0 0 25px rgba(255,215,0,.5),
+        0 0 60px rgba(255,180,0,.25);
 
-  text-align:center;
+    position:relative;
+    overflow:hidden;
 
-  box-shadow:
-  0 0 30px rgba(255,180,0,0.8);
-
-  animation: appear 1.5s ease;
+    animation:appear 1s ease;
 }
 
 
@@ -78,30 +90,29 @@
 
 
 
-.divider {
+.divider{
+    width:80%;
+    height:3px;
 
-  width:80%;
-  height:2px;
+    margin:30px auto;
 
-  background:#d18b00;
-
-  margin:25px auto;
-
+    background:linear-gradient(
+        to right,
+        transparent,
+        gold,
+        transparent
+    );
 }
 
 
 
-.details div {
-
-  margin:20px;
-
+.details div{
+    margin:25px 0;
 }
 
 
-.details span {
-
-  font-size:30px;
-
+.details span{
+    font-size:36px;
 }
 
 
@@ -115,6 +126,75 @@ transform:translateY(40px);
 to {
 opacity:1;
 transform:translateY(0);
+}
+
+}
+@media (max-width:768px){
+
+.scroll-card{
+    margin:20px;
+    padding:30px 20px;
+}
+
+.hero-title h1{
+    font-size:32px;
+}
+
+.hero-title p{
+    font-size:18px;
+}
+
+.scroll-card h3{
+    font-size:24px;
+}
+
+.scroll-card p{
+    font-size:16px;
+}
+
+}
+.diya{
+    position:fixed;
+    width:90px;
+    bottom:40px;
+    z-index:8;
+    animation:float 3s ease-in-out infinite;
+    filter:drop-shadow(0 0 15px gold);
+}
+
+.left{
+    left:25px;
+}
+
+.right{
+    right:25px;
+}
+
+@keyframes float{
+
+0%,100%{
+    transform:translateY(0px);
+}
+
+50%{
+    transform:translateY(-12px);
+}
+
+}
+
+@media(max-width:768px){
+
+.diya{
+    width:55px;
+    bottom:20px;
+}
+
+.left{
+    left:10px;
+}
+
+.right{
+    right:10px;
 }
 
 }

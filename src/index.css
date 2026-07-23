@@ -109,3 +109,44 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+.gold-flash{
+    position:fixed;
+    inset:0;
+
+    background:rgba(255,215,0,0.95);
+
+    z-index:99999;
+
+    pointer-events:none;
+
+    animation:goldFlash 1.5s ease forwards;
+}
+
+@keyframes goldFlash{
+
+0%{
+    opacity:0;
+}
+
+20%{
+    opacity:1;
+}
+
+80%{
+    opacity:1;
+}
+
+100%{
+    opacity:0;
+}
+}
+.page-hide {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.page-show {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 1s ease;
+}

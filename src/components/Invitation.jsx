@@ -6,6 +6,17 @@ export default function Invitation() {
     <section className="invitation">
 
       <FlowerRain />
+      <img
+        src="/imges/diya-left.png"
+        className="diya left"
+        alt="Left Diya"
+      />
+
+      <img
+        src="/imges/diya-right.png"
+        className="diya right"
+        alt="Right Diya"
+      />
 
       <div className="hero-title">
         <h1>🌺 गणपती बाप्पा मोरया 🌺</h1>

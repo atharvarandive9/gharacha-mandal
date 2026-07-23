@@ -1,8 +1,8 @@
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import "./../styles/hero.css";
 
-export default function Hero() {
-  const navigate = useNavigate();
+export default function Hero({ onOpen }) {
+  // const navigate = useNavigate();
   return (
     <section className="hero">
 
@@ -36,7 +36,7 @@ export default function Hero() {
 
         <button
           className="btn"
-          onClick={() => navigate("/invitation")}
+          onClick={onOpen}
         >
             View Invitation
         </button>
