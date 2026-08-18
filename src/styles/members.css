@@ -1,87 +1,174 @@
-.members-section{
+.members-section {
+    padding: 80px 20px;
+    text-align: center;
 
-padding:100px 20px;
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.35),
+            rgba(0, 0, 0, 0.5)
+        ),
+        url("/imges/temple-bg.png");
 
-background:#0b0b0b;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
 
-text-align:center;
+.members-section h2 {
+    color: #ffd700;
+    font-size: 38px;
+    margin-bottom: 50px;
+
+    text-shadow:
+        0 0 10px gold,
+        0 0 25px orange;
+}
+
+.members-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+}
+
+.member-card {
+    position: relative;
+
+    padding: 15px 15px 25px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 248, 220, 0.98),
+            rgba(255, 235, 180, 0.95)
+        );
+
+    border: 3px solid #d89b00;
+    border-radius: 25px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.35),
+        0 0 20px rgba(255, 190, 0, 0.35);
+
+    overflow: hidden;
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+/* Golden glow on hover */
+
+.member-card:hover {
+    transform: translateY(-10px) scale(1.02);
+
+    box-shadow:
+        0 18px 40px rgba(0, 0, 0, 0.45),
+        0 0 35px rgba(255, 215, 0, 0.75);
+}
+
+/* BIG MEMBER IMAGE */
+
+.member-card img {
+    display: block;
+
+    width: 100%;
+    height: 300px;
+
+    object-fit: cover;
+
+    border-radius: 18px;
+
+    border: 3px solid #ffd700;
+
+    box-shadow:
+        0 0 15px rgba(255, 180, 0, 0.6);
+
+    transition: transform 0.4s ease;
+}
+
+/* Slight image zoom */
+
+.member-card:hover img {
+    transform: scale(1.04);
+}
+
+.member-card h3 {
+    margin: 20px 5px 5px;
+
+    color: #8b4a00;
+
+    font-size: 24px;
+
+    font-weight: 700;
+}
+
+.member-card p {
+    margin: 0;
+
+    color: #a36b00;
+
+    font-size: 17px;
+
+    font-weight: 600;
+}
+
+/* ========================= */
+/* TABLET */
+/* ========================= */
+
+@media (max-width: 900px) {
+
+    .members-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .member-card img {
+        height: 280px;
+    }
 
 }
 
-.members-section h2{
+/* ========================= */
+/* MOBILE */
+/* ========================= */
 
-color:#FFD700;
+@media (max-width: 600px) {
 
-font-size:36px;
+    .members-section {
+        padding: 60px 15px;
+        background-attachment: scroll;
+    }
 
-margin-bottom:50px;
+    .members-section h2 {
+        font-size: 28px;
+        margin-bottom: 35px;
+    }
 
-}
+    .members-grid {
+        grid-template-columns: 1fr;
+        max-width: 380px;
+        gap: 25px;
+    }
 
-.members-grid{
+    .member-card {
+        padding: 12px 12px 22px;
+    }
 
-display:grid;
+    .member-card img {
+        width: 100%;
+        height: 330px;
+    }
 
-grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    .member-card h3 {
+        font-size: 22px;
+    }
 
-gap:30px;
-
-max-width:1100px;
-
-margin:auto;
-
-}
-
-.member-card{
-
-background:rgba(255,255,255,.05);
-
-backdrop-filter:blur(15px);
-
-border:1px solid rgba(255,215,0,.2);
-
-padding:25px;
-
-border-radius:25px;
-
-transition:.35s;
-
-}
-
-.member-card:hover{
-
-transform:translateY(-10px);
-
-box-shadow:0 0 25px rgba(255,215,0,.3);
-
-}
-
-.member-card img{
-
-width:140px;
-
-height:140px;
-
-border-radius:50%;
-
-object-fit:cover;
-
-border:4px solid gold;
-
-margin-bottom:20px;
-
-}
-
-.member-card h3{
-
-color:white;
-
-margin-bottom:8px;
-
-}
-
-.member-card p{
-
-color:#FFD700;
+    .member-card p {
+        font-size: 16px;
+    }
 
 }
