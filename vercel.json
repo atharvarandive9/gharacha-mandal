@@ -1,6 +1,14 @@
 {
   "rewrites": [
     {
+      "source": "/invitation",
+      "destination": "/api/invitation"
+    },
+    {
+      "source": "/invitation-app",
+      "destination": "/index.html"
+    },
+    {
       "source": "/(.*)",
       "destination": "/index.html"
     }

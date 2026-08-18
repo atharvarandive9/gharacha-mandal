@@ -7,7 +7,10 @@ export default function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/invitation" element={<InvitationPage />} />
+      <Route
+        path="/invitation-app"
+        element={<InvitationPage />}
+      />
     </Routes>
   );
 }
